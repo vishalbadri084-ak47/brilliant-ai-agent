@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brilliant-ai-agent"
+version = "0.2.0"
+description = "Flight recorder and replay for AI agents. Local, zero-dependency."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = ["License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3"]
+keywords = ["ai-agents", "observability", "debugging", "replay", "llm"]
+
+[project.scripts]
+brilliant-agent = "brilliant_ai_agent.cli:main"
+
+[tool.setuptools]
+packages = ["brilliant_ai_agent"]
