@@ -29,6 +29,8 @@ with Run("find the pricing page", prices={"my-model": (3.0, 15.0)},   # USD per 
 
 The report shows: GOAL MET / NOT MET / UNKNOWN, failed tool calls, the first failure, cost, and a warning when the same tool is called 3+ times with identical arguments.
 
+![Example HTML report from the demo run](docs/screenshots/report.png)
+
 ## Replay and compare
 
 ```python
